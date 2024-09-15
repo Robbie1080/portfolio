@@ -44,20 +44,25 @@ header {
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);  
 }
 
+.pic-name {
+  display: flex;
+  flex-direction: row;
+}
+
 header h1 {
-    color: var(--tertiary);
-    background-color: var(--secondary);
-    padding: 5px 1% 5px 6%;
-    margin: 0 0 0 -25%;
+    color: var(--secondary);
+    margin: 5% 0 5% 15px;
     font-size: 4vw;
-    line-height: 1;
+
+
   }
   
 .me {
   height: 100px;
   width: 90px;
-  margin-left: 200px;
+  margin-left: 15px;
   border-radius: 50%;
+
 }
 
   nav {
@@ -163,7 +168,7 @@ header h1 {
     justify-content: space-around;
   }
   
-  .flex-item {
+  .flex-container a {
     border: 5px solid var(--secondary);
     background-color: var(--primary);
     color: var(--tertiary);
@@ -186,21 +191,21 @@ header h1 {
     flex-basis: 100%;
   }
 
-  .flex-item:hover {
+  .flex-container a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
   
-  .flex-item div {
+  .flex-container a {
     background-color: var(--secondary);
     padding: 8px 10px;
   }
   
-  .flex-item h3 {
+  .flex-container h3 {
     font-size: 1.6rem;
   }
 
 
-.contact {
+.contact-flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -208,7 +213,7 @@ header h1 {
     height: 100%;
   }
   
-  .contact a {
+  .contact-flex-container a {
     color: var(--tertiary);
     padding: 5px;
     text-decoration: none;
@@ -223,36 +228,55 @@ header h1 {
     display: inline-block;
   }
   
-  .contact a:hover {
+  .contact-flex-container a:hover {
     background-size: 100% 88%;
     color: var(--secondary);
   }
   
-  .contact div {
-    margin: 20px;
-  }
 
-#number1 {
+.led-wall {
     background-image: url(../img/This\ one.png);
 }
-#number2 {
+.react-calc {
     background-image: url(../img/Untitled\ design\ \(2\).png);
 }
-#number3 {
+ .pastel-puzzles {
     background-image: url(../img/Untitled\ design\ \(2\).png);
 }
-#number4 {
+.surf-report {
     background-image: url(../img/Untitled\ design\ \(2\).png);
 }
-#number5 {
+.run-buddy {
     background-image: url(../img/Untitled\ design\ \(2\).png);
 }
   
 @media screen and (max-width: 768px) {
-  .flex-item {
-    height: 200PX;
-    width: 500px;
+   section {
+    min-height: 100px;
+    flex-basis: 100%;
+
   }
 }
-  
-  
+
+@media screen and (max-width: 768px) {
+  .me {
+    margin: 0 0 0 5px;
+    height: -50%;
+    width: -50%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .flex-container a {
+  flex-basis: 100%;
+  min-height: 100px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .contact-flex-container a {
+    font-size: small;
+  }
+}
