@@ -186,7 +186,7 @@ header h1 {
     font-size: 0.9rem;
   }
 
-  .flex-container > a:first-child {
+  .flex-container a:first-child {
     min-height: 200px;
     flex-basis: 100%;
   }
@@ -251,31 +251,20 @@ header h1 {
 }
   
 @media screen and (max-width: 768px) {
-   section {
-    min-height: 100px;
-    flex-basis: 100%;
-
-  }
-}
-
-@media screen and (max-width: 768px) {
   .me {
     margin: 0 0 0 5px;
     height: -50%;
     width: -50%;
   }
-}
 
-
-@media screen and (max-width: 768px) {
-  .flex-container a {
-  flex-basis: 100%;
-  min-height: 100px;
+  .flex-container a:first-child {
+    min-height: 150px;
   }
-}
 
+  .flex-container a {
+    flex-basis: 100%;
+  }
 
-@media screen and (max-width: 768px) {
   .contact-flex-container a {
     font-size: small;
   }
